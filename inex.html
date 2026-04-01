@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends - Super Trunfo da Lore 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <header class="game-header">
+        <h1>⚔️ SUPER TRUNFO</h1>
+        <h2>League of Legends - Runeterra 2026</h2>
+        <p class="subtitle">Baseado no poder na lore do universo</p>
+    </header>
+
+    <div class="game-info">
+        <div class="placar">
+            <div class="jogador-placar">
+                <span>Invocador</span>
+                <span id="pontosJogador" class="pontos">0</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="maquina-placar">
+                <span>Nexus</span>
+                <span id="pontosMaquina" class="pontos">0</span>
+            </div>
+        </div>
+        <div id="quantidade-cartas" class="cartas-restantes">Cartas restantes: 170</div>
+    </div>
+
+    <main class="game-board">
+        <div class="arena">
+            <div class="card-slot" id="jogador1">
+                <div class="empty-slot">Sua Carta</div>
+            </div>
+            
+            <div class="battle-center">
+                <button id="sortear" class="btn btn-primary" onclick="sortearCarta()">
+                    🎲 Sortear Cartas
+                </button>
+                <button id="jogar" class="btn btn-attack" onclick="jogar()" disabled>
+                    ⚔️ Atacar!
+                </button>
+                <button id="btnProximaRodada" class="btn btn-next" onclick="proximaRodada()" disabled>
+                    ➡️ Próxima Rodada
+                </button>
+                <div id="resultado" class="resultado-batalha"></div>
+            </div>
+            
+            <div class="card-slot" id="jogador2">
+                <div class="empty-slot">Carta do Nexus</div>
+            </div>
+        </div>
+    </main>
+
+    <div class="atributos-info">
+        <h3>📊 Atributos (Baseados na Lore)</h3>
+        <div class="atributos-grid">
+            <div class="attr-box">
+                <span class="attr-icon">❤️</span>
+                <span class="attr-name">Vida</span>
+                <span class="attr-desc">Resistência física e vitalidade</span>
+            </div>
+            <div class="attr-box">
+                <span class="attr-icon">✨</span>
+                <span class="attr-name">Poder Mágico</span>
+                <span class="attr-desc">Capacidade arcana e mística</span>
+            </div>
+            <div class="attr-box">
+                <span class="attr-icon">⚔️</span>
+                <span class="attr-name">Força</span>
+                <span class="attr-desc">Poder destrutivo bruto</span>
+            </div>
+            <div class="attr-box">
+                <span class="attr-icon">🛡️</span>
+                <span class="attr-name">Armadura</span>
+                <span class="attr-desc">Defesa e proteção</span>
+            </div>
+            <div class="attr-box super-trunfo">
+                <span class="attr-icon">👑</span>
+                <span class="attr-name">Lore Power</span>
+                <span class="attr-desc">Influência no universo de Runeterra</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="game-footer">
+        <p>2026 - Super Trunfo LoL | Todos os 170+ campeões de Runeterra</p>
+    </footer>
+
+    <audio id="audio-vitoria" preload="auto"></audio>
+    <audio id="audio-derrota" preload="auto"></audio>
+
+    <script src="cartas.js"></script>
+    <script src="jogo.js"></script>
+</body>
+</html>
