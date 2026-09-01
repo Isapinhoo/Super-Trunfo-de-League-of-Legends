@@ -68,7 +68,7 @@ Cada rodada, o jogador recebe uma carta com um campeão e precisa escolher o mel
 
 ```
 Super-Trunfo-de-League-of-Legends/
-├── inex.html       # Estrutura principal do jogo
+├── index.html       # Estrutura principal do jogo
 ├── style.css       # Estilização e animações
 ├── jogo.js         # Lógica do jogo (rodadas, pontuação, DOM)
 └── cartas.js       # Base de dados com todos os 170+ campeões
@@ -89,16 +89,16 @@ cd Super-Trunfo-de-League-of-Legends
 
 # Abra o arquivo no navegador
 # Windows:
-start inex.html
+start index.html
 
 # Mac:
-open inex.html
+open index.html
 
 # Linux:
-xdg-open inex.html
+xdg-open index.html
 ```
 
-Ou simplesmente dê **duplo clique** no arquivo `inex.html`.
+Ou simplesmente dê **duplo clique** no arquivo `index.html`.
 
 ---
 
